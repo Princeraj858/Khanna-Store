@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMARTPHONES products</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/b/y/x/-original-imah3xk8crpgrg9y.jpeg?q=70" width="300px" height="300px">
+                <h3>MOTO g45</h3>
+                
+                <p><strong>Price:</strong>₹12299</p>
+               <button class="buy-now" onclick="addToCart('MOTO g45',12299)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/k/e/i/-original-imah3ajbzmxyjswb.jpeg?q=70" width="300px" height="300px">
+                <h3>NOthing Cmf 1</h3>
+                
+                <p><strong>Price:</strong> ₹15999</p>
+               <button class="buy-now" onclick="addToCart('NOthing Cmf 1',15999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/x/1/-original-imah4kxes2ktzf9f.jpeg?q=70" width="300px" height="300px">
+                <h3>VIVO T3X</h3>
+                
+                <p><strong>Price:</strong> ₹14999</p>
+               <button class="buy-now" onclick="addToCart('VIVO T3X',14999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/m/e/3/-original-imah37gwn2xbvzhy.jpeg?q=70" width="300px" height="300px">
+                <h3>OPPO K12x</h3>
+                
+                <p><strong>Price:</strong> ₹16499</p>
+               <button class="buy-now" onclick="addToCart('OPPO K12x',16499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/q/a/s/-original-imah4zgmaxh8qn8a.jpeg?q=70" width="300px" height="300px">
+                <h3>OPPO Reno 12 Pro</h3>
+                
+                <p><strong>Price:</strong> ₹38899</p>
+               <button class="buy-now" onclick="addToCart('OPPO Reno 12 Pro',38899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/q/p/q/-original-imagy5wfcgybpq5x.jpeg?q=70" width="300px" height="300px">
+                <h3>ONE PLUS 12r</h3>
+                
+                <p><strong>Price:</strong> ₹45529</p>
+               <button class="buy-now" onclick="addToCart('ONE PLUS 12r',45529)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/e/e/g/-original-imah4sssfvvahchb.jpeg?q=70" width="300px" height="300px">
+                <h3>SAMSUNG GALAXY A14 5g</h3>
+                
+                <p><strong>Price:</strong> ₹14499</p>
+               <button class="buy-now" onclick="addToCart('SAMSUNG GALAXY A14 5g',14499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/5/i/7/-original-imahfu766ybd5h4z.jpeg?q=70" width="300px" height="300px">
+                <h3>samsung galaxy s24 ultra 5g</h3>
+                
+                <p><strong>Price:</strong> ₹160000</p>
+               <button class="buy-now" onclick="addToCart('samsung galaxy s24 ultra 5g',160000)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70" width="300px" height="300px">
+                <h3>iphone 15</h3>
+                
+                <p><strong>Price:</strong> ₹75599</p>
+               <button class="buy-now" onclick="addToCart('iphone 15',75599)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/x/v/y/-original-imah4jz66dmcwhmd.jpeg?q=70" width="200px" height="300px">
+                <h3>iphone 16 Pro Max</h3>
+                
+                <p><strong>Price:</strong> ₹169999</p>
+               <button class="buy-now" onclick="addToCart('iphone 16 Pro Max',169999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/x/a/z9-lite-5g-i2306-iqoo-original-imah3fdtbjbvhh55.jpeg?q=70" width="300px" height="300px">
+                <h3>iqoo z9 lite 5g</h3>
+                
+                <p><strong>Price:</strong> ₹17999</p>
+               <button class="buy-now" onclick="addToCart('iqoo z9 lite 5g',17999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/a/l/z7-pro-5g-5665162-iqoo-original-imah2fwrzxzhtpdy.jpeg?q=70" width="300px" height="300px">
+                <h3>iqoo z7 pro</h3>
+                
+                <p><strong>Price:</strong> ₹24449</p>
+               <button class="buy-now" onclick="addToCart('iqoo z7 pro',24449)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>

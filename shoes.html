@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoes products</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRoNICQxJllSf6SBM_uGq67MTR1pI74dPvyNaaEab114-cUVg7Vl2xR7ZN66u_DWcy_xSM6FILks8VDycQe7ocar8s8qXTw3M8kW24_a4Ba4TYvDatjba-iFv5FkmfpSWduAlYBkRk&usqp=CAc" width="300px" height="300px">
+                <h3>AIR JORDAN</h3>
+                
+                <p><strong>Price:</strong>₹4999</p>
+               <button class="buy-now" onclick="addToCart('AIR JORDAN',4999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/r/8/3/8-tarzan-11-8-asian-white-navy-original-imah3bfgs4hffzks.jpeg?q=70" width="300px" height="300px">
+                <h3>ASIAN SNEAKERS</h3>
+                
+                <p><strong>Price:</strong> ₹899</p>
+               <button class="buy-now" onclick="addToCart('ASIAN SNEAKERS',899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/f/k/p/9-cas-gr-9050-9-bersache-grey-original-imah3xm3qy5q2mgp.jpeg?q=70" width="300px" height="300px">
+                <h3>BERSACHE</h3>
+                
+                <p><strong>Price:</strong> ₹1499</p>
+               <button class="buy-now" onclick="addToCart('BERSACHE',1499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/p/f/b/-original-imahfueggbg5wymn.jpeg?q=70" width="300px" height="300px">
+                <h3>CAMPUS</h3>
+                
+                <p><strong>Price:</strong> ₹1099</p>
+               <button class="buy-now" onclick="addToCart('CAMPUS',1099)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/j/h/r/-original-imahfxtazyycwyxe.jpeg?q=70" width="300px" height="300px">
+                <h3>WOODLAND</h3>
+                
+                <p><strong>Price:</strong> ₹3899</p>
+               <button class="buy-now" onclick="addToCart('WOODLAND',3899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/x/i/o/-original-imah23c6js6zpyxz.jpeg?q=70" width="300px" height="300px">
+                <h3>SPARX</h3>
+                
+                <p><strong>Price:</strong> ₹2229</p>
+               <button class="buy-now" onclick="addToCart('SPARX',2229)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/m/e/y/-original-imah4aajdvknfhjf.jpeg?q=70" width="300px" height="300px">
+                <h3>PUMA</h3>
+                
+                <p><strong>Price:</strong> ₹2499</p>
+               <button class="buy-now" onclick="addToCart('PUMA',2499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/0/f/2/8-57230241-8-liberty-black-original-imah4zaqeqzsajvh.jpeg?q=70" width="300px" height="300px">
+                <h3>LIBERTY</h3>
+                
+                <p><strong>Price:</strong> ₹1600</p>
+               <button class="buy-now" onclick="addToCart('LIBERTY',1600)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/8/s/1/10-asgo1475a-black-mustard-10-abros-black-mustard-original-imah4xb2e7aumxuw.jpeg?q=70" width="300px" height="300px">
+                <h3>ABROS</h3>
+                
+                <p><strong>Price:</strong> ₹1599</p>
+               <button class="buy-now" onclick="addToCart('ABROS',1599)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/d/1/m/7-rsl052-7-red-tape-beige-original-imah55z4ywz3f7ub.jpeg?q=70" width="200px" height="300px">
+                <h3>RED TAPE</h3>
+                
+                <p><strong>Price:</strong> ₹1699</p>
+               <button class="buy-now" onclick="addToCart('RED TAPE',1699)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/1/x/6/-original-imahfuehugga5szw.jpeg?q=70" width="300px" height="300px">
+                <h3>CAMPUS</h3>
+                
+                <p><strong>Price:</strong> ₹1799</p>
+               <button class="buy-now" onclick="addToCart('CAMPUS',1799)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/x/n/x/7-rso357-7-red-tape-blue-original-imahf6sha5jwzjxc.jpeg?q=70" width="300px" height="300px">
+                <h3>RED TAPE</h3>
+                
+                <p><strong>Price:</strong> ₹2449</p>
+               <button class="buy-now" onclick="addToCart('RED TAPE',2449)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>

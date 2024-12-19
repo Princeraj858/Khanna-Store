@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electronics products</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/150/150/xif0q/computer/x/9/j/-original-imahyjzh7m2zsqdg.jpeg?q=70" width="300px" height="250px">
+                <h3>Hp victus</h3>
+                
+                <p><strong>Price:</strong>₹52299</p>
+               <button class="buy-now" onclick="addToCart('Hp victus',52299)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/8/s/h/-original-imahfwd3htfc5hfz.jpeg?q=70" width="250px" height="280px">
+                <h3>Monitor</h3>
+                
+                <p><strong>Price:</strong> ₹15999</p>
+               <button class="buy-now" onclick="addToCart('Monitor',15999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/printer/m/l/k/smart-all-in-one-589-hp-original-imah52eqhagzgfgq.jpeg?q=70" width="280px" height="250px">
+                <h3>Printer</h3>
+                
+                <p><strong>Price:</strong> ₹6999</p>
+               <button class="buy-now" onclick="addToCart('Printer',6999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/q/q/n/-original-imagmugg8hx9v5fr.jpeg?q=70" width="250px" height="250px">
+                <h3>Earbuds</h3>
+                
+                <p><strong>Price:</strong> ₹1099</p>
+               <button class="buy-now" onclick="addToCart('Earbuds',1099)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/kmccosw0/headphone/u/g/s/rockerz-450-pro-boat-original-imagf9j54dayugqg.jpeg?q=70" width="300px" height="250px">
+                <h3>Headphone</h3>
+                
+                <p><strong>Price:</strong> ₹1899</p>
+               <button class="buy-now" onclick="addToCart('Headphone',1899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/l2jcccw0/headphone/p/y/v/-original-imagduskcc5srd3z.jpeg?q=70" width="300px" height="250px">
+                <h3>Neckband</h3>
+                
+                <p><strong>Price:</strong> ₹1529</p>
+               <button class="buy-now" onclick="addToCart('Neckband',1529)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/m/k/w/-original-imagrcjhxzmmgedc.jpeg?q=70" width="300px" height="250px">
+                <h3>Analog watch</h3>
+                
+                <p><strong>Price:</strong> ₹1499</p>
+               <button class="buy-now" onclick="addToCart('Analog watch',1499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/y/o/l/-original-imagrwh7ynxsjy7e.jpeg?q=70" width="300px" height="250px">
+                <h3>Women watch</h3>
+                
+                <p><strong>Price:</strong> ₹1600</p>
+               <button class="buy-now" onclick="addToCart('Women watch',1600)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/w/f/m/-original-imagrf4gvgfjj8jf.jpeg?q=70" width="300px" height="250px">
+                <h3>Smartwatch</h3>
+                
+                <p><strong>Price:</strong> ₹1599</p>
+               <button class="buy-now" onclick="addToCart('Smartwatch',1599)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/ktop5e80/tablet/6/o/s/mk2p3hn-a-apple-original-imag6yy8deumbvxz.jpeg?q=70" width="250px" height="250px">
+                <h3>Tablet</h3>
+                
+                <p><strong>Price:</strong> ₹19999</p>
+               <button class="buy-now" onclick="addToCart('Tablet',19999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/150/150/xif0q/sports-action-camera/x/3/q/-original-imagt5usqhtgaf5q.jpeg?q=70" width="300px" height="250px">
+                <h3>Go pro</h3>
+                
+                <p><strong>Price:</strong> ₹35999</p>
+               <button class="buy-now" onclick="addToCart('Go pro',35999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/150/150/xif0q/dslr-camera/i/o/c/eos-r100-24-1-eos-r100-kit-canon-original-imagqeydhsxgacxp.jpeg?q=70" width="300px" height="250px">
+                <h3>Cannon Camera</h3>
+                
+                <p><strong>Price:</strong> ₹24449</p>
+               <button class="buy-now" onclick="addToCart('Cannon Camera',24449)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Womens products</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/y/s/f/free-2-star-sheldrom-mart-unstitched-original-imah2qhc5xjmw3su.jpeg?q=70" width="300px" height="300px">
+                <h3>Saree</h3>
+                
+                <p><strong>Price:</strong>₹999</p>
+               <button class="buy-now" onclick="addToCart('Saree',999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/a/k/c/xl-esp-555bluehaar-espen-original-imah2gg2jwumdcdp.jpeg?q=70" width="300px" height="300px">
+                <h3>Kurti</h3>
+                
+                <p><strong>Price:</strong> ₹1199</p>
+               <button class="buy-now" onclick="addToCart('Kurti',1199)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/l/c/h/xs-popcorn-shirt-for-women-jinik-original-imah48syhnyu9ph7.jpeg?q=70" width="300px" height="300px">
+                <h3>Top Wear</h3>
+                
+                <p><strong>Price:</strong> ₹1499</p>
+               <button class="buy-now" onclick="addToCart('Top Wear',1499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/l12h1u80/jean/k/g/3/30-jeans-blue2-1-zayla-original-imagcpy7rpfgwa2b.jpeg?q=70" width="300px" height="300px">
+                <h3>Jeans</h3>
+                
+                <p><strong>Price:</strong> ₹899</p>
+               <button class="buy-now" onclick="addToCart('Jeans',899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-gown/b/j/q/free-half-sleeve-semi-stitched-boly-sky-blue-gown-shopsy-qexty-original-imagcj799hheya7g.jpeg?q=70" width="300px" height="300px">
+                <h3>Gwons</h3>
+                
+                <p><strong>Price:</strong> ₹1899</p>
+               <button class="buy-now" onclick="addToCart('Gwons',1899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/i/v/p/3-sc-101-blue-stelon-comfort-dark-blue-original-imaggydt9pfgxcj4.jpeg?q=70" width="300px" height="300px">
+                <h3>Heels</h3>
+                
+                <p><strong>Price:</strong> ₹829</p>
+               <button class="buy-now" onclick="addToCart('Heels',829)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/makeup-kit/y/p/j/-original-imah4c3cfbfga5kg.jpeg?q=70" width="300px" height="300px">
+                <h3>Makeup</h3>
+                
+                <p><strong>Price:</strong> ₹2499</p>
+               <button class="buy-now" onclick="addToCart('Makeup',2499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/precious-ring/r/m/p/na-na-2-9-r2101-jewelies-original-imah4tzypyyfhhf6.jpeg?q=70" width="300px" height="300px">
+                <h3>Jewellery</h3>
+                
+                <p><strong>Price:</strong> ₹2000</p>
+               <button class="buy-now" onclick="addToCart('Jewellery',2000)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/hand-messenger-bag/5/w/w/pu-leather-latest-handbags-for-women-s-ladies-combo-of-4-combo-original-imahf5y6qjrggybc.jpeg?q=70" width="300px" height="300px">
+                <h3>Handbags</h3>
+                
+                <p><strong>Price:</strong> ₹1899</p>
+               <button class="buy-now" onclick="addToCart('Handbags',1899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/fairness/a/t/3/-original-imagp8wheehfzghe.jpeg?q=70" width="200px" height="300px">
+                <h3>Skincare</h3>
+                
+                <p><strong>Price:</strong> ₹499</p>
+               <button class="buy-now" onclick="addToCart('Skincare',499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/legging/p/l/s/xxl-3-pc-leggings-xxl-combo-039-f-a-t-a-h-original-imah3g9gc3a2zzvx.jpeg?q=70" width="300px" height="300px">
+                <h3>Leggings</h3>
+                
+                <p><strong>Price:</strong> ₹1099</p>
+               <button class="buy-now" onclick="addToCart('Leggings',1099)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/soap/z/r/e/-original-imahfdercuaaw7sc.jpeg?q=70" width="300px" height="300px">
+                <h3>Bath</h3>
+                
+                <p><strong>Price:</strong> ₹549</p>
+               <button class="buy-now" onclick="addToCart('Bath',549)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>

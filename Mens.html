@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mens products</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/q/r/y/m-ustshs1625-u-s-polo-assn-original-imags7km7psabmcj.jpeg?q=70" width="300px" height="300px">
+                <h3>Tshirt</h3>
+                
+                <p><strong>Price:</strong>₹499</p>
+               <button class="buy-now" onclick="addToCart('Tshirt',499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/d/o/o/l-0123-shwmfr-04-02-the-indian-garage-co-original-imagsut2cvrgazwm.jpeg?q=70" width="300px" height="300px">
+                <h3>Shirts</h3>
+                
+                <p><strong>Price:</strong> ₹1099</p>
+               <button class="buy-now" onclick="addToCart('Shirts',1099)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/w/i/p/32-el-p-cot-el-cielo-original-imagu75yvuxbyhrh.jpeg?q=70" width="300px" height="300px">
+                <h3>Trouser</h3>
+                
+                <p><strong>Price:</strong> ₹1499</p>
+               <button class="buy-now" onclick="addToCart('Trouser',1499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/9/t/k/l-ssblock-810-11-tqh-original-imah3wgksfft3pqp.jpeg?q=70" width="300px" height="300px">
+                <h3>Gym tees</h3>
+                
+                <p><strong>Price:</strong> ₹599</p>
+               <button class="buy-now" onclick="addToCart('Gym Tees',599)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/kkfrjww0/cap/r/8/0/free-2379101-puma-original-imafzrx9zs5pdedf.jpeg?q=70" width="300px" height="300px">
+                <h3>Caps</h3>
+                
+                <p><strong>Price:</strong> ₹499</p>
+               <button class="buy-now" onclick="addToCart('Caps',499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/7/g/0/m-men-cotton-kurta-manimann-original-imah5f9vge8fymyj.jpeg?q=70" width="300px" height="300px">
+                <h3>Kurta</h3>
+                
+                <p><strong>Price:</strong> ₹829</p>
+               <button class="buy-now" onclick="addToCart('Kurta',829)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/perfume/s/i/v/80-luxury-unisex-perfume-gift-set-4x20-ml-eau-de-parfum-bella-original-imahyz6chfrcbfr4.jpeg?q=70" width="300px" height="300px">
+                <h3>Perfume</h3>
+                
+                <p><strong>Price:</strong> ₹799</p>
+               <button class="buy-now" onclick="addToCart('Perfume',799)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/boxer/r/f/u/m-bs1007-mx1864-damensch-original-imahfrcbv5ggz2gw.jpeg?q=70" width="300px" height="300px">
+                <h3>Boxer</h3>
+                
+                <p><strong>Price:</strong> ₹999</p>
+               <button class="buy-now" onclick="addToCart('Boxer',999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/u/a/v/34-phtr000019-highlander-original-imagurnyyrrxyf3b.jpeg?q=70" width="300px" height="300px">
+                <h3>Cargos</h3>
+                
+                <p><strong>Price:</strong> ₹699</p>
+               <button class="buy-now" onclick="addToCart('Cargos',699)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/belt/o/i/z/one-size-vegan-leather-belt-pro-rab-53-s5-j71-belt-for-men-original-imah29nzhdgwbyv8.jpeg?q=70" width="300px" height="300px">
+                <h3>Belts</h3>
+                
+                <p><strong>Price:</strong> ₹499</p>
+               <button class="buy-now" onclick="addToCart('Belts',499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/apparel-set/e/j/l/xxl-apparel-set001-co-ords-aforte-garments-i-original-imah5bhw5tkygmbw.jpeg?q=70" width="300px" height="300px">
+                <h3>Night Suit</h3>
+                
+                <p><strong>Price:</strong> ₹2099</p>
+               <button class="buy-now" onclick="addToCart('Night Suit',2099)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/o/w/y/this-product-is-sold-as-medium-by-the-brand-sq-bu-elgnt-wer-29-original-imaguf8cffyj4xsu.jpeg?q=70" width="300px" height="300px">
+                <h3>Sunglasses</h3>
+                
+                <p><strong>Price:</strong> ₹549</p>
+               <button class="buy-now" onclick="addToCart('Sunglasses',549)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>

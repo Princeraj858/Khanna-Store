@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Offer</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kid-table/e/m/z/40-plywood-barbie-soliam-barbie-28-original-imah3hkecymyphvf.jpeg?q=70" width="300px" height="250px">
+                <h3>Study Table</h3>
+                
+                <p><strong>Price:</strong>₹599</p>
+               <button class="buy-now" onclick="addToCart('Study Table',599)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/suitcase/f/h/i/-original-imaghdrzhxsqdqxt.jpeg?q=70" width="250px" height="280px">
+                <h3>Trolly</h3>
+                
+                <p><strong>Price:</strong> ₹2899</p>
+               <button class="buy-now" onclick="addToCart('Trolly',2899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/y/0/0/-original-imagtt3wykyvwndh.jpeg?q=70" width="280px" height="250px">
+                <h3>SoundBar</h3>
+                
+                <p><strong>Price:</strong> ₹5449</p>
+               <button class="buy-now" onclick="addToCart('SoundBar',5449)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/rice-light/h/y/x/138-star-2-49-1-hdrl-new-star-fountain-01-home-delight-original-imah4kfmkd7ufgwd.jpeg?q=70" width="250px" height="250px">
+                <h3>Lighting</h3>
+                
+                <p><strong>Price:</strong> ₹799</p>
+               <button class="buy-now" onclick="addToCart('Lighting',799)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/office-study-chair/a/j/1/1-microfiber-46-c104-cellbell-89-original-imah27rc4g2pfdvz.jpeg?q=70" width="250px" height="250px">
+                <h3>Chair</h3>
+                
+                <p><strong>Price:</strong> ₹5999</p>
+               <button class="buy-now" onclick="addToCart('Chair',5999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/kkimfm80/tea/z/n/1/premium-pouch-regular-tea-powder-tata-original-imafzuf2mnubzphd.jpeg?q=70" width="250px" height="300px">
+                <h3>Tea</h3>
+                
+                <p><strong>Price:</strong> ₹429</p>
+               <button class="buy-now" onclick="addToCart('Tea',429)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/l4n2oi80/sofa-bed/h/z/g/-original-imagfhzygpt8jwwr.jpeg?q=70" width="250px" height="250px">
+                <h3>Sofa</h3>
+                
+                <p><strong>Price:</strong> ₹4999</p>
+               <button class="buy-now" onclick="addToCart('Sofa',4999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/i/k/l/edge-50-fusion-pb300001in-motorola-original-imahywzpfd2jh9ep.jpeg?q=70" width="250px" height="300px">
+                <h3>phones</h3>
+                
+                <p><strong>Price:</strong> ₹22220</p>
+               <button class="buy-now" onclick="addToCart('phones',22220)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/perfume/x/o/g/100-white-oud-long-lasting-unisex-eau-de-parfum-bella-vita-original-imahyh5xkj6yhk9z.jpeg?q=70" width="200px" height="300px">
+                <h3>Perfume</h3>
+                
+                <p><strong>Price:</strong> ₹355</p>
+               <button class="buy-now" onclick="addToCart('Perfume',355)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/q/n/9/s-148935-vincent-chase-original-imah4ebsvdthg3nj.jpeg?q=70" width="300px" height="200px">
+                <h3>sunglasses</h3>
+                
+                <p><strong>Price:</strong> ₹999</p>
+               <button class="buy-now" onclick="addToCart('sunglasses',999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lunch-box/w/t/n/450-lunch-box-set-2-sst-2-original-imahydfmew6hwjyz.jpeg?q=70" width="250px" height="300px">
+                <h3>lunch Box</h3>
+                
+                <p><strong>Price:</strong> ₹399</p>
+               <button class="buy-now" onclick="addToCart('lunch Box',399)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/d/l/u/-original-imah4aemgwyhq3rn.jpeg?q=70" width="250px" height="300px">
+                <h3>Shoes</h3>
+                
+                <p><strong>Price:</strong> ₹1999</p>
+               <button class="buy-now" onclick="addToCart('Shoes',1999)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>

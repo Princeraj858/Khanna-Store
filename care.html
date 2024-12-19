@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitness&Care products</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/dumbbell/a/u/v/2-5kg-x-4-premium-quality-10-aman-fit-original-imahf75527svkq5m.jpeg?q=70" width="300px" height="250px">
+                <h3>Dumbell</h3>
+                
+                <p><strong>Price:</strong>₹2299</p>
+               <button class="buy-now" onclick="addToCart('Dumbell',2299)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/kkzrpu80/resistance-tube/z/s/e/best-quality-latex-high-tensile-toning-tube-smooth-grip-toning-original-imagy7q9cjtmwfs9.jpeg?q=70" width="250px" height="280px">
+                <h3>Tube Rope</h3>
+                
+                <p><strong>Price:</strong> ₹399</p>
+               <button class="buy-now" onclick="addToCart('Tube Rope',399)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/kykgb680/bottle/9/u/c/650-typhoon-gym-shaker-bottles-650-ml-for-protein-shake-100-original-imagarj5yqh8h8nf.jpeg?q=70" width="280px" height="250px">
+                <h3>Shaker Bottle</h3>
+                
+                <p><strong>Price:</strong> ₹249</p>
+               <button class="buy-now" onclick="addToCart('Shaker Bottle',249)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/fitness-grip/c/6/g/hand-grip-band-for-gym-grip-strengthener-gym-hand-gripper-for-original-imah45erywsyftg2.jpeg?q=70" width="250px" height="250px">
+                <h3>Strenghter</h3>
+                
+                <p><strong>Price:</strong> ₹299</p>
+               <button class="buy-now" onclick="addToCart('Strenghter',299)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/perfume/s/i/v/80-luxury-unisex-perfume-gift-set-4x20-ml-eau-de-parfum-bella-original-imahyz6chfrcbfr4.jpeg?q=70" width="250px" height="250px">
+                <h3>Bellavita</h3>
+                
+                <p><strong>Price:</strong> ₹899</p>
+               <button class="buy-now" onclick="addToCart('Bellavita',899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/perfume/e/a/k/-original-imagsz9qetyukgwu.jpeg?q=70" width="300px" height="250px">
+                <h3>fogg</h3>
+                
+                <p><strong>Price:</strong> ₹529</p>
+               <button class="buy-now" onclick="addToCart('fogg',529)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shampoo/r/f/f/-original-imahyg7qttnsteem.jpeg?q=70" width="300px" height="250px">
+                <h3>Sampoo</h3>
+                
+                <p><strong>Price:</strong> ₹1499</p>
+               <button class="buy-now" onclick="addToCart('Sampoo',1499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/l2qhjm80/antiseptic/x/l/9/-original-imageyaphwxhgevr.jpeg?q=70" width="300px" height="250px">
+                <h3>Dettol</h3>
+                
+                <p><strong>Price:</strong> ₹420</p>
+               <button class="buy-now" onclick="addToCart('Dettol',420)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/hair-oil/q/f/n/-original-imah2pemusqeqhnc.jpeg?q=70" width="300px" height="250px">
+                <h3>Hair oil</h3>
+                
+                <p><strong>Price:</strong> ₹369</p>
+               <button class="buy-now" onclick="addToCart('Hair oil',369)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/treadmill/p/3/t/tdm-97-4hp-peak-pre-set-workout-programs-heart-rate-sensor-original-imah553kn8yyggfn.jpeg?q=70" width="250px" height="250px">
+                <h3>TraedMill</h3>
+                
+                <p><strong>Price:</strong> ₹19999</p>
+               <button class="buy-now" onclick="addToCart('TraedMill',19999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/v/p/l/-original-imagsb5fqeazaf68.jpeg?q=70" width="200px" height="250px">
+                <h3>Body Lotion</h3>
+                
+                <p><strong>Price:</strong> ₹499</p>
+               <button class="buy-now" onclick="addToCart('Body Lotion',499)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/perfume/h/h/j/-original-imagxzchdghpxzny.jpeg?q=70" width="300px" height="250px">
+                <h3>Engage</h3>
+                
+                <p><strong>Price:</strong> ₹449</p>
+               <button class="buy-now" onclick="addToCart('Engage',449)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>

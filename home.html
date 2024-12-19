@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home products</title>
+      <link rel="stylesheet" href="styles.css">
+   
+
+
+
+<style>
+
+    .shoppingcard {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    height: 440px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.9;
+
+}
+
+.shoppingcard img {
+    border-radius: 8px;
+}
+
+.shoppingcard h3{
+    color: black;
+    font-family:Arial, sans-serif ;
+  
+}
+
+.shoppingcard p {
+    font-size: 1em;
+    color: #666;
+}
+    .product{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 250px;
+    column-gap: 200px;
+}
+       .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }  
+
+    </style>
+
+</head>
+<body>
+ 
+        <div class="product">
+            
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/150/150/k6dxocw0/showpiece-figurine/e/m/m/sitting-buddha-idol-statue-showpiece-gold-and-black-original-imaf7gfztzfvcvpr.jpeg?q=70" width="300px" height="250px">
+                <h3>Showpiece</h3>
+                
+                <p><strong>Price:</strong>₹599</p>
+               <button class="buy-now" onclick="addToCart('Showpiece',599)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mixer-grinder-juicer/i/0/m/-original-imaghy69gbrjwkvz.jpeg?q=70" width="250px" height="280px">
+                <h3>Mixer</h3>
+                
+                <p><strong>Price:</strong> ₹3899</p>
+               <button class="buy-now" onclick="addToCart('Mixer',3899)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/kthjy4w0/otg-new/4/y/w/electric-oven-pigeon-original-imag6txsa3gyezkn.jpeg?q=70" width="280px" height="250px">
+                <h3>Oven</h3>
+                
+                <p><strong>Price:</strong> ₹5449</p>
+               <button class="buy-now" onclick="addToCart('Oven',5449)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/induction-cook-top/w/n/l/atlas-3-0-plus-41988-prestige-original-imaghh6hhammkz3s.jpeg?q=70" width="250px" height="250px">
+                <h3>Induction</h3>
+                
+                <p><strong>Price:</strong> ₹2799</p>
+               <button class="buy-now" onclick="addToCart('Induction',2799)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/chimney/i/k/t/-original-imagsrd2mz5fstkk.jpeg?q=70" width="250px" height="250px">
+                <h3>Chimney</h3>
+                
+                <p><strong>Price:</strong> ₹11999</p>
+               <button class="buy-now" onclick="addToCart('Chimney',11999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/ki6bgcw0-0/havan-items/x/2/1/lxi-4-sandalwood-scented-chandan-sticks-60g-65g-vibex-original-imafyysvfspway4u.jpeg?q=70" width="300px" height="250px">
+                <h3>Sandalwood</h3>
+                
+                <p><strong>Price:</strong> ₹529</p>
+               <button class="buy-now" onclick="addToCart('Sandalwood',529)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/havan-items/f/f/n/pack-of-2-red-danedar-chandan-sandalwood-tika-danewala-chandan-original-imah29ybkkzrfkzh.jpeg?q=70" width="250px" height="250px">
+                <h3>Chandan</h3>
+                
+                <p><strong>Price:</strong> ₹199</p>
+               <button class="buy-now" onclick="addToCart('Chandan',199)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/havan-items/g/g/3/-original-imagvt4jgydzcgez.jpeg?q=70" width="300px" height="250px">
+                <h3>Kapoor</h3>
+                
+                <p><strong>Price:</strong> ₹220</p>
+               <button class="buy-now" onclick="addToCart('Kapoor',220)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/washing-machine-new/r/b/m/-original-imah2tx7cyakc7p8.jpeg?q=90" width="250px" height="250px">
+                <h3>Washing Machine</h3>
+                
+                <p><strong>Price:</strong> ₹35569</p>
+               <button class="buy-now" onclick="addToCart('Washing Machine',35569)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/air-conditioner-new/h/j/v/-original-imah4gsy6yfmrum9.jpeg?q=70" width="300px" height="150px">
+                <h3>AC</h3>
+                
+                <p><strong>Price:</strong> ₹49999</p>
+               <button class="buy-now" onclick="addToCart('AC',49999)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/x/e/x/-original-imagywu2cueacg6h.jpeg?q=70" width="200px" height="300px">
+                <h3>Refrigerator</h3>
+                
+                <p><strong>Price:</strong> ₹13399</p>
+               <button class="buy-now" onclick="addToCart('Refrigerator',13399)">Buy Now</button>
+            </div>
+
+            <div class="shoppingcard ">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/water-purifier/0/s/t/smoke-audi-18-ltr-drink-pure-india-1st-bis-is-16240-2023-cm-original-imahy34z6zhmpy2j.jpeg?q=70" width="200px" height="300px">
+                <h3>Kent</h3>
+                
+                <p><strong>Price:</strong> ₹4449</p>
+               <button class="buy-now" onclick="addToCart('Kent',4449)">Buy Now</button>
+            </div>
+
+        </div>  
+
+
+    
+ <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
+
+</body>
+</html>
